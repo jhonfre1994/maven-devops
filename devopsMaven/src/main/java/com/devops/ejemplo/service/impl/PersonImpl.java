@@ -14,12 +14,14 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.devops.ejemplo.service.PersonService;
+import lombok.AllArgsConstructor;
 
 /**
  *
  * @author jhonfre
  */
 @Service
+@AllArgsConstructor
 public class PersonImpl implements PersonService {
 
     @Autowired
