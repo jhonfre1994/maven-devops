@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'devopsMaven/pom.xml'
+    mavenPomFile: 'pom.xml'
     codeCoverageToolOption: jaCoCo
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
