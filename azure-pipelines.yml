@@ -19,5 +19,5 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: 'devopsMaven/**/surefire-reports/TEST-*.xml'
+    testResultsFiles: '$(System.DefaultWorkingDirectory)/**/surefire-reports/TEST-*.xml'
     goals: 'package'
