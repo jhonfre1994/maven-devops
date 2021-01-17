@@ -88,6 +88,22 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        
+                        <configuration>
+                            <rules>
+                                <rule>
+                                    <element>CLASS</element>
+                                    <limits>
+                                        <limit>
+                                            <counter>BRANCH</counter>
+                                            <value>MASTER</value>
+                                            <minimum>0.80</minimum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+      
                     </execution>
                 </executions>
             </plugin>
